@@ -1,0 +1,334 @@
+
+:root{
+
+   --cor-de-fundo: white;
+   --cor-de-link: #000;
+}
+
+.logo {
+    padding: 2% 2%;
+
+}
+
+body {
+    color: black;
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    min-height: 300px;
+    min-width: 300px;
+}
+
+h2 {
+    background-color: aliceblue;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1% 5%;
+}
+
+h3, .academic__title, .experience__section__title {
+    background-color: orange;
+    text-align: center;
+    font-size: 2rem;
+    color: var(--cor-de-link);
+    padding: 1% 5%;
+}
+
+ol, ul,li {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 3% 5%;
+    background-color: none;
+}
+
+img {
+    display: block;
+    margin: auto;
+    padding: 2% 0%;
+}
+
+img:hover {
+    opacity: 80%;
+}
+
+button {
+    background-color: gray;
+    color: white;
+    height: 50%;
+    width: 20%;
+    padding: 1% 1%;
+    font-size: 1.2rem;
+    font-weight: bold;
+    
+}
+
+button:hover {
+    background-color: yellow;
+    border-radius: 5%;
+    color: black;
+}
+
+.menu__list {
+    background-color: yellow;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    justify-content: center;
+    padding: 1%;
+    margin: 0 5%;
+}
+
+.menu__list li {
+    color: blue;
+}
+
+.menu__list__item__contato {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.title__profile {
+    border-radius: 50%;
+}
+
+.title__bio {
+    text-align: center;
+}
+
+.title__network {
+    background-color: lightblue;
+    font-weight: bold;
+    font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 5%;
+}
+
+.about__container p, .about__container img {
+    margin: 1% 5%;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.signature {
+    text-align: center;
+    font-family: 'Dancing Script';
+    font-style: italic;
+    font-size: 5rem;
+    font-weight: bold;
+    color: gray;
+}
+
+.skills__line, .hobbies__line, .academic__courses {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: space-around;
+    margin: 3% 5%;
+    width: auto;
+}
+
+.skills__line ul, .hobbies__line ul, .academic__courses ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    padding: 5% 5%;
+    text-align: center;
+    color: gray;
+}
+
+.skills__line li, .hobbies__line li, .academic__courses li {
+    display: flex;
+    flex-direction: column;
+    padding: 1% 2%;
+}
+
+.academic__courses {
+    background-color: lightblue;
+    padding: 5% 5%;
+    width: 80%;
+    border-radius: 20px;
+}
+
+.academic__courses__box {
+    display: flex;
+    flex-direction: initial;
+    justify-content: center;
+    width: 35%;
+}
+
+.academic__courses__list {
+    align-items: center;
+    min-height: 200px;
+    min-width: 200px;
+}
+
+.academic__courses__item__img--utp, .academic__courses__item__img--alura, .academic__courses__item__img--univalle {
+    max-height: 150px;
+    max-width: 150px;
+}
+
+.experience__img, .formcontato__img {
+    height: auto;
+    width: 100%;
+}
+
+.experience__info, .experience__box {
+    text-align: center;
+    color: gray;
+    background-color: aliceblue;
+}
+
+.experience__text {
+    color: black;
+}
+
+.experience__description {
+    display: block;
+    padding: 2% 2%;
+}
+
+.formcontato__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formcontato__input {
+    height: 100%;
+}
+
+#botonEnviarAhoraElFormulario {
+    width: 100%;
+}
+
+section.footer{
+   text-align: center;
+   padding: 2% 2%;
+   background-color: lightblue;
+}
+
+/*Mobile hasta 700px*/
+@media (max-width: 700px) {
+
+    .logo {
+        padding: 2% 2%;
+        max-height: 50%;
+        max-width: 50%;
+    
+    }
+
+    h2 {
+        font-size: 1rem;
+        color: gray;
+    }
+    
+    h3{
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    
+    ol, ul,li {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 3% 5%;
+        background-color: none;
+    }
+
+    button {
+        height: auto;
+        width: 50%;
+    }
+
+    .menu__list {
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+        border-radius: 15px;
+        font-weight:bold;
+        font-size: 1.2rem;
+        line-height: 0;
+        padding: 3% 3%;
+    }
+
+    .title__profile {
+        border-radius: 50%;
+        max-height: 50%;
+        max-width: 50%;
+    }
+
+    .title__network {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-around;
+        font-size: 1rem;
+        line-height: normal;
+    }
+
+    .title__subsection {
+        display: none;
+    }
+
+    .about__paragraph--2, .about__paragraph--3, .about__paragraph--4 {
+        display: none;
+    }
+
+    .academic__courses {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .academic__courses__box {
+        width: 100%;
+    }
+
+    .experience__description {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+/*Tablet*/
+@media (min-width: 701px) and (max-width: 1500px) {
+
+    .logo {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    
+    .menu__list {
+        display: flex;
+        flex-wrap: wrap;
+        text-decoration: none;
+        border-radius: 15px;
+        font-weight:bold;
+        font-size: 1.2rem;
+        line-height: 0;
+        padding: 1% 1%;
+    }
+
+    .academic__courses__box {
+        padding-bottom: 5%;
+    }
+
+    .academic__courses__list {
+        min-height: 190px;
+        min-width: 190px;
+        padding-bottom: 3%;
+    }
+    
+}
